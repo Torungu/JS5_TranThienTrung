@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-header text-primary">
+            QUẢN LÝ TUYỂN SINH
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label for="">Điểm chuẩn của hội đồng</label>
+                <input type="number" class="form-control col-1" name="" id="diemChuan" aria-describedby="helpId"
+                    placeholder="">
+                <div class="row">
+                    <div class="col-sm-1">
+                        <label for="">Điểm Toán</label>
+                        <input type="number" class="form-control" name="" id="diemToan" aria-describedby="helpId"
+                            placeholder="">
+                    </div>
+                    <div class="col-sm-1">
+                        <label for="">Điểm Văn</label>
+                        <input type="number" class="form-control" name="" id="diemVan" aria-describedby="helpId"
+                            placeholder="">
+                    </div>
+                    <div class="col-sm-1">
+                        <label for="">Điểm Anh</label>
+                        <input type="number" class="form-control" name="" id="diemAnh" aria-describedby="helpId"
+                            placeholder="">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="form-group col-sm-2">
+                        <label for="">Khu vực</label>
+                        <select class="custom-select" name="" id="khuVuc">
+                            <option value="0">Chọn khu vực</option>
+                            <option value="2">Khu vực A</option>
+                            <option value="1">Khu vực B</option>
+                            <option value="0.5">Khu vực C</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-sm-2">
+                        <label for="">Đối tượng</label>
+                        <select class="custom-select" name="" id="doiTuong">
+                            <option value="0">Chọn đối tượng</option>
+                            <option value="2.5">Đối tượng 1</option>
+                            <option value="1.5">Đối tượng 2</option>
+                            <option value="1">Đối tượng 3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-success" onclick="ketQua()">Kết quả</button>
+        </div>
+        <div id="xuatThongbao" style="display:none" class="card-footer bg-info text-warning"></div>
+    </div>
+    <br>
+    <div class="card">
+        <div class="card-header text-primary">
+            TÍNH TIỀN ĐIỆN
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-2">
+                    <label for="">Tên khách hàng</label>
+                    <input type="text" class="form-control " name="" id="tenKhach" aria-describedby="helpId"
+                        placeholder="">
+                    </div>
+                    <div class="col-1">
+                    <label for="">Số kW</label>
+                    <input type="number" class="form-control " name="" id="kW" aria-describedby="helpId"
+                        placeholder="">
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-success" onclick="tinhTien()">Tính tiền</button>
+        </div>
+        <div id="thanhToan" style="display:none" class="card-footer bg-info text-warning"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
